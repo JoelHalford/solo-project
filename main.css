@@ -12,7 +12,7 @@ body {
 	margin: 0;
 }
 
-nav ul {
+nav > ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -29,11 +29,13 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	font-size: 1.2em;
-	padding: 50px;
+	padding: 10px 50px 10px 50px;
+	color: #23395B;
 }
 
 nav ul li a:hover {
 	color: blue;
+	color: #9EADC8;
 }
 
 nav ul li a:visited {
@@ -44,7 +46,7 @@ nav ul li a:visited {
 	margin: 2% 20%;
 	background-color: rgba(255,255,255,0.8);
 	border-radius: 25px;
-	height: 600px;
+	height: 1000px;
 	padding-left: 100px;
 	padding-right: 100px;
 	padding-top: 40px;
@@ -56,8 +58,9 @@ nav ul li a:visited {
 
 .recent-heroes {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0;
+	flex-wrap: wrap;
 }
 
 .recent-heroes li {
@@ -66,4 +69,17 @@ nav ul li a:visited {
 
 .recent-heroes li .icon {
 	border-radius: 50%;
+}
+
+.form-content {
+	margin: 0 auto;
+	width: 80%;
+}
+
+#submitBtn {
+	float: right;
+}
+
+#registerHeading {
+	text-align: center;
 }
